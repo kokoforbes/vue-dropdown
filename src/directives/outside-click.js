@@ -24,7 +24,7 @@ export default {
     const index = el.dataset.outsideClickIndex;
     const handler = instances[index];
     document.removeEventListener("click", handler);
-    document.removeEventListener("touchstart", click);
+    document.removeEventListener("touchstart", handler);
     instances.splice(index, 1);
   },
 };
